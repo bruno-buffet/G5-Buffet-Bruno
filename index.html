@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buffet Aylen Bruno Cecilia | DGM4AH 2023</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/logo-negro-01.png">
+</head>
+
+<body class="body">
+  <header class="header">
+    <nav class="navbar navbar-expand-lg p-3" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="120" alt="Logo MoMA"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"> Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"><img src="img/lupa.png" width="30" alt="Lupa-busqueda"></a>
+            </li>
+            <li class="nav-item d-block d-sm-block d-md-none">
+              <!-- Boton entradas -->
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"">
+                <button type="button" class="btn btn-outline-light rounded-5 p-3 m-2" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                  Entradas
+                </button>
+              </div>
+
+              <!-- Formulario entrada -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header bg-black">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Reserve sus entradas</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                          placeholder="nombre@ejemplo.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Día y horario a reservar</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer bg-black">
+                      <button type="button" class="btn btn-outline-light rounded-5 p-3 m-2"
+                        data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-outline-light rounded-5 p-3 m-2">Consultar reserva</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="noticias" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#noticias" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#noticias" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/memories.png" class="d-block w-100 img-fluid" alt="Memories">
+        <div class="carousel-caption d-none d-md-block p-5">
+          <h1 class="display-4 pt-5">Reserva de entradas con horario</h1>
+          <p>El MoMA está abierto todos los días, de 10:30 a. m. a 5:30 p. m. Estamos abiertos hasta las 7:00 p.m. los
+            sábados.</p>
+          <!-- Boton entradas -->
+          <button type="button" class="btn btn-outline-light rounded-5 p-3 m-2" data-bs-toggle="modal"
+            data-bs-target="#ticket">
+            Entradas
+          </button>
+
+          <!-- Formulario entrada -->
+          <div class="modal fade" id="ticket" tabindex="-1" aria-labelledby="ticket"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-black">
+                  <h1 class="modal-title fs-5" id="ticket">Reserve sus entradas</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                      placeholder="nombre@ejemplo.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Día y horario a reservar</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer bg-black">
+                  <button type="button" class="btn btn-outline-light rounded-5 p-3 m-2"
+                    data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-outline-light rounded-5 p-3 m-2">Consultar reserva</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/pride.png" class="d-block w-100 img-fluid" alt="Pride">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4 pt-5">Mes del Orgullo 2023</h1>
+          <p>Celebre el trabajo innovador de los artistas LGBTQ+
+            y explore perspectivas queer sobre el arte este Mes del Orgullo.</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#noticias" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#noticias" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3 text-center text-white justify-content-md-center">
+          <h2 class="titulo fs-1">Proximos eventos</h2>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="card text-bg-dark">
+            <img src="img/georgia.png" class="card-img img-fluid" alt="Georgia-O'Keeffe:">
+            <div class="card-img-overlay p-3">
+              <h3 class="card-title pt-4">Recorrido curatorial: Georgia
+                O'Keeffe: Ver toma tiempo</h3>
+              <p class="card-text">Mon, May 22, 6:00–8:00 p.m.</p>
+              <!-- Boton info -->
+              <button type="button" class="btn btn-outline-light rounded-5" data-bs-toggle="modal"
+                data-bs-target="#georgia">
+                + Info
+              </button>
+
+              <!-- Card info -->
+              <div class="modal fade" id="georgia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="georgia" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header bg-black">
+                      <h4 class="modal-title text-light fs-5 display-4" id="georgia">“Ver lleva tiempo”
+                      </h4>
+                    </div>
+                    <div class="modal-body text-black">
+                      “Ver lleva tiempo”, escribió una vez Georgia O’Keeffe. Mejor conocida por sus
+                      pinturas de flores, O'Keeffe (1887-1986) también realizó una extraordinaria serie de
+                      obras en carboncillo, lápiz, acuarela y pastel. Reuniendo obras en papel que a
+                      menudo se ven individualmente, junto con pinturas clave, esta exposición ofrece una
+                      visión poco común de los métodos de trabajo del artista y nos invita a tomarnos un
+                      tiempo para mirar.
+                    </div>
+                    <div id="carousel-pastilla1" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="img/georgia1.png" class="d-block w-100 img-fluid" alt="Linea-forma-color">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/georgia2.png" class="d-block w-100 img-fluid" alt="Linea-forma-color">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/georgia3.png" class="d-block w-100 img-fluid" alt="Linea-forma-color">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pastilla1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carousel-pastilla1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <div class="modal-footer bg-black">
+                      <button type="button" class="btn btn-outline-light rounded-5"
+                        data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="card text-bg-dark">
+            <img src="img/artlab.png" class="img-fluid" alt="Art-Lab">
+            <div class="card-img-overlay">
+              <h3 class="card-title pt-4">Laboratorio de arte:
+                Línea, forma, color</h3>
+              <p class="card-text">Thu, May 25, 11:00 a.m.–5:00 p.m.</p>
+              <!-- Boton info 2 -->
+              <button type="button" class="btn btn-outline-light rounded-5" data-bs-toggle="modal"
+                data-bs-target="#static-lab">
+                + Info
+              </button>
+
+              <!-- Card info 2 -->
+              <div class="modal fade" id="static-lab" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="static-lab" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header bg-black">
+                      <h4 class="modal-title text-light fs-5 display-4" id="static-lab">Línea, forma, color
+                      </h4>
+                    </div>
+                    <div class="modal-body text-black">
+                      En este espacio práctico, niños y adultos pueden dibujar, trabajar con cables,
+                      diseñar emojis, jugar con cajas de luz y más. Entra y elige las actividades que te
+                      interesen. Todas las edades son bienvenidas.
+                    </div>
+                    <div id="carousel-lab" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="img/art1.png" class="d-block w-100 img-fluid" alt="Linea-forma-color">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/art2.png" class="d-block w-100 img-fluid" alt="Linea-forma-color">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/art3.png" class="d-block w-100 img-fluid" alt="Linea-forma-color">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-lab"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carousel-lab"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    <div class="modal-footer bg-black">
+                      <button type="button" class="btn btn-outline-light rounded-5"
+                        data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inicio coleccion de Obras -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="titulo fs-1 fw-bold">Colecciones</h2>
+          <hr class="text-white border-3 opacity-100 p-4">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-6 col-sm-12">
+          <div class="card text-white shadow mb-5 border-0">
+            <img src="img/zac.png" class="card-img-top img-fluid" alt="Zac-Prekop">
+            <div class="card-body p-4 rounded-bottom">
+              <h3 class="card-title">Zac Prekop “New Drone”</h3>
+              <p class="card-text fw-light">Zac Prekop, miembro del nuevo grupo de pintores que
+                tienen una estética casual e improvisada, hace pinturas
+                desafiantes con un toque tan hábil y ligero que a menudo
+                apenas se distinguen.</p>
+              <a href="galeria.html" class="btn btn-outline-light rounded-5">Ver más +</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-sm-12">
+          <div class="card text-white shadow mb-5 border-0">
+            <img src="img/cui.png" class="card-img-top img-fluid" alt="Cui-Jie">
+            <div class="card-body p-4 rounded-bottom">
+              <h3 class="card-title">Cui Jie “Western City Gate”</h3>
+              <p class="card-text fw-light">Nacida en 1983 en Shanghái, China. Vive y trabaja en
+                Shanghái. Cui Jie crea pinturas que exploran las perspectivas
+                heterogéneas en varios campos y contextos geopolíticos
+                mediante la incorporación de diversas capas.</p>
+              <a href="galeria.html" class="btn btn-outline-light rounded-5">Ver más +</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-6 col-sm-12">
+          <div class="card text-white shadow mb-5 border-0">
+            <img src="img/sofia.png" class="card-img-top img-fluid" alt="Sofía-Gallisá">
+            <div class="card-body p-4 rounded-bottom">
+              <h3 class="card-title">Sofía Gallisá Muriente
+                “Asimilar y Destruir”</h3>
+              <p class="card-text fw-light">Sofía Gallisá Muriente es una artista visual cuyo trabajo
+                resiste borraduras coloniales y reclama la libertad de agencia
+                histórica, generando mecanismos para recordar y reimaginar.</p>
+              <a href="galeria.html" class="btn btn-outline-light rounded-5">Ver más +</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-sm-12">
+          <div class="card text-white shadow mb-5 border-0">
+            <img src="img/some.png" class="card-img-top img-fluid" alt="Ulrike-Müller">
+            <div class="card-body p-4 rounded-bottom">
+              <h3 class="card-title">Ulrike Müller “Some”</h3>
+              <p class="card-text fw-light">Müller es miembro del grupo feminista genderqueer LTTR
+                con sede en Nueva York, así como editora de su revista
+                homónima. También representó a Austria en la Bienal de El
+                Cairo en 2011.</p>
+              <a href="galeria.html" class="btn btn-outline-light rounded-5">Ver más +</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fin seccion coleccion de obras -->
+
+  <!-- Seccion ver mas obras -->
+  <section class="ver-mas">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="mx-auto d-grid gap-2 d-md-flex justify-content-md-center mb-4 mb-lg-3">
+            <button class="btn btn-outline-dark rounded-5 p-" type="button">
+              <a class="boton-ver-mas " href="galeria.html">Seguí viendo más de nuestra colección</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fin seccion ver mas obras -->
+
+
+  <!-- seccion testimonios -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/testimonio1.png" class="d-block w-100" alt="Testimonio1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/testimonio2.png" class="d-block w-100" alt="testimonio2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/testimonio3.png" class="d-block w-100" alt="Testimonio3">
+      </div>
+      <div class="carousel-item">
+        <img src="img/testimonio4.png" class="d-block w-100" alt="testimonio4">
+      </div>
+      <div class="carousel-item">
+        <img src="img/testimonio5.png" class="d-block w-100" alt="testimonio5">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Fin seccion testimonios -->
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 py-4 text-center">
+          <img class="img-fluid" src="img/logo.png" width="110" alt="Logo-MoMA">
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 py-4 text-center">
+          <a class="red-social" href="http:///www.facebook.com/MuseumofModernArt/" target="_blank">
+            <img src="img/fb.png" width="48" alt="red-social1">
+          </a>
+          <a class="red-social" href="https://www.instagram.com/themuseumofmodernart/" target="_blank">
+            <img src="img/ig.png" width="48" alt="red-social2">
+          </a>
+          <a class="red-social" href="https://twitter.com/museummodernart" target="_blank">
+            <img src="img/tw.png" width="48" alt="red-social3">
+          </a>
+          <a class="red-social" href="https://www.youtube.com/user/momavideos" target="_blank">
+            <img src="img/yt.png" width="48" alt="red-social4">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center text-light py-4">
+          <p>
+            © MoMA Museum of Modern Art
+          </p>
+          <p>
+            Buffet Aylen Aldana - Bruno Maria Cecilia / DGM4AH 2023
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoMA Galería</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo-negro-01.png">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg p-3" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="120" alt="Logo MoMA"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html"><img src="img/lupa.png" width="30"
+                                    alt="Lupa-busqueda"></a>
+                        </li>
+                        <li class="nav-item d-block d-sm-block d-md-none">
+                            <!-- Boton entradas -->
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"">
+                            <button type=" button" class="btn btn-outline-light rounded-5 p-3 m-2"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Entradas
+                                </button>
+                            </div>
+
+                            <!-- Formulario entrada -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-black">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Reserve sus entradas
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-dark">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Correo
+                                                    electrónico</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="nombre@ejemplo.com">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Día y
+                                                    horario a reservar</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                    rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg-black">
+                                            <button type="button" class="btn btn-outline-light rounded-5 p-3 m-2"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="button"
+                                                class="btn btn-outline-light rounded-5 p-3 m-2">Consultar
+                                                reserva</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="introduccion">
+        <!-- carrusel galeria -->
+        <div id="carousel-galeria" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-galeria" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-galeria" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-galeria" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/galerias.png" class="d-block w-100" alt="galeria-de-arte">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-1 fw-bold">Galería de arte</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/galerias1.png" class="d-block w-100" alt="galeria-de-arte">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="fw-bold display-4">Galería</h2>
+                        <p>IBM, East Fishkill, NY. Diagram of Dynamic Random-Access Memory Chip (DRAM). 1984.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/galerias2.png" class="d-block w-100" alt="galeria-de-arte">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="fw-bold display-4">Galería</h2>
+                        <p>Ernest Cole. <em>Untitled.</em> c. 1960. Gelatin silver print, 9 7/16 × 11 15/16 (24 × 30.3
+                            cm). The Family of Man Fund. © Ernest Cole/Magnum</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-galeria" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-galeria" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- fin carrusel galeria -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-3">
+                    <h1 class="titulo-galeria text-light p-4 text-center display-3 fw-bold">Sobre la colección</h1>
+                </div>
+                <div class="col-lg-4 col-md-4 p-3">
+                    <h2 class="text-light fw-bold">Explora la colección más importante del mundo
+                        del arte moderno y contemporáneo.</h2>
+                </div>
+                <div class="col-lg-8 col-md-8 p-3">
+                    <p class="parrafo fw-light text-light fs-5">
+                        El Museo de Arte Moderno adquirió sus primeras obras de arte en 1929, año de su
+                        creación. Hoy, la colección en evolución del MoMA contiene casi 200.000 obras de todo el
+                        mundo que abarcan los últimos 150 años. La colección incluye una gama cada vez mayor
+                        de expresión visual, que incluye pintura, escultura, grabado, dibujo, fotografía, arquitectura,
+                        diseño, cine y medios y artes escénicas.
+                    </p>
+                    <p class="parrafo fw-light text-light fs-5">
+                        MoMA se compromete a ayudar a todos a comprender, disfrutar y utilizar nuestra colección.
+                        Puede explorar la colección al ver el arte que ahora se exhibe en el Museo, las obras que se
+                        agregaron recientemente a la colección o un índice de artistas que tienen obras en la
+                        colección o que han aparecido en una exhibición del MoMA.
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Comienzo de coleccion -->
+    <!-- Comienzo Vincent van Gogh -->
+    <div class="container-colecciones p-3">
+        <div class="row p-4 pe-lg-0 align-items-center rounded-3 shadow-lg">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="artista">Vincent van Gogh (Países Bajos, 1853–1890)</h1>
+                <p class="artista-parrafo">"A veces hago cambios en el tema, pero todavía no invento la totalidad de la
+                    pintura.
+                    La encuentro lista, pero para desenredarla, en el mundo real".</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                    <button type="button" class="btn btn-outline-light p-3 rounded-5" data-bs-toggle="modal"
+                        data-bs-target="#vangogh">
+                        Ver obras
+                    </button>
+                </div>
+                <!-- Carrusel van Gogh -->
+                <div class="modal fade" id="vangogh" tabindex="-1" aria-labelledby="vangogh" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title" id="vangogh">Vincent van Gogh</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="card border-0">
+                                    <div id="carousel-vangogh" class="carousel slide carousel-fade">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carousel-vangogh"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carousel-vangogh"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carousel-vangogh"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carousel-vangogh"
+                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="img/vincent.png" class="d-block img-fluid" alt="Obra-Nro1">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Los olivos, Saint Rémy, Junio/Julio 1889</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/vincent1.png" class="d-block img-fluid" alt="Obra-Nro2">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Portaretrato de Joseph Roulin Arles, principios de 1889.</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/vincent2.png" class="d-block img-fluid" alt="Obra-Nro3">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>La noche estrellada, Saint Rémy, Junio 1889</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/vincent3.png" class="d-block img-fluid" alt="Obra-Nro4">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5 class="text-black">Los comedores de patatas, Abril de 1885</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carousel-vangogh" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carousel-vangogh" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                    <div class="card-body-galeria">
+                                        <p class="card-text p-4">¿Qué hace que un retrato sea moderno? ¿Y qué hace que
+                                            un
+                                            retrato moderno siga
+                                            pareciendo moderno, incluso décadas después de su creación? Para Vincent van
+                                            Gogh
+                                            (1853–1890), la respuesta era clara: el color. “Lo que más me apasiona,
+                                            mucho más que
+                                            todo lo demás en mi profesión”, le dijo entusiasmado a su hermana,
+                                            Willemien, “es el
+                                            retrato, el retrato moderno. Lo busco a través del color.” Este uso poco
+                                            convencional del
+                                            color fue vital para el esfuerzo continuo de Van Gogh por crear lo que
+                                            describió como
+                                            "retratos que parecerían apariciones para la gente un siglo después". Creía
+                                            que podía hacer
+                                            que sus pinturas perduraran solo abandonando la "semejanza fotográfica" y
+                                            luchando por la
+                                            "expresión apasionada".</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-0 overflow-hidden shadow-lg">
+                <img class="rounded-lg-3 img-fluid" src="img/vincent.png" alt="Vincent-Van-Gogh" width="720">
+            </div>
+        </div>
+    </div>
+    <!-- Fin Vincent van Gogh -->
+    <!-- Comienzo Pablo Picasso -->
+    <div class="container-colecciones p-3">
+        <div class="row p-4 pe-lg-0 align-items-center rounded-3 shadow-lg">
+            <div class="col-lg-4 p-0 overflow-hidden shadow-lg">
+                <img class="rounded-lg-3 img-fluid" src="img/picasso.png" alt="" width="720">
+            </div>
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="artista">Pablo Picasso (España, 1881–1973)</h1>
+                <p class="artista-parrafo">“Para mí no hay pasado o presente en el arte”.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                    <button type="button" class="btn btn-outline-light p-3 rounded-5" data-bs-toggle="modal"
+                        data-bs-target="#picasso">
+                        Ver obras
+                    </button>
+                </div>
+                <!-- Carrusel Picasso -->
+                <div class="modal fade" id="picasso" tabindex="-1" aria-labelledby="picasso" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title" id="picasso">Pablo Picasso</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="card border-0">
+                                    <div id="carousel-picasso" class="carousel slide carousel-fade">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carousel-picasso"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carousel-picasso"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carousel-picasso"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carousel-picasso"
+                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner rounded">
+                                            <div class="carousel-item active">
+                                                <img src="img/picasso.png" class="d-block w-100 img-fluid"
+                                                    alt="Obra-Nro1">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Les Demoiselles d'Avignon, Paris, Junio/Julio 1907</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/picasso1.png" class="d-block w-100 img-fluid"
+                                                    alt="Obra-Nro2">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Bathers in a Forest, 1908</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/picasso2.png" class="d-block w-100 img-fluid"
+                                                    alt="Obra-Nro3">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Still Life with Liqueur Bottle, Horta de Sant Joan, Agosto 1909
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/picasso3.png" class="d-block w-100 img-fluid"
+                                                    alt="Obra-Nro4">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>Card Player, Paris, invierno 1913-14</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carousel-picasso" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carousel-picasso" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                    <div class="card-body-galeria">
+                                        <p class="card-text p-4">¿“Variación no significa evolución”, dijo Pablo Picasso
+                                            en
+                                            1923.1 “Si un artista varía su modo
+                                            de expresión, esto solo significa que ha cambiado su forma de pensar, y al
+                                            cambiar, puede
+                                            ser para mejor o puede ser para el peor." Con estas palabras, Picasso arrojó
+                                            luz sobre dos
+                                            principios centrales de su producción artística a lo largo de casi 80 años:
+                                            su apertura a una
+                                            amplia gama de estilos, temas y medios, y su resistencia a la noción de que
+                                            el cambio en el
+                                            arte corresponde necesariamente a la mejora o progreso. Tomemos, por
+                                            ejemplo, sus
+                                            enfoques eclécticos para representar la cabeza humana. Aunque durante su
+                                            vida la obra de
+                                            Picasso fue anunciada como representativa de movimientos artísticos
+                                            específicos, como el
+                                            cubismo, el clasicismo y el surrealismo, el artista resistió activamente las
+                                            categorías y
+                                            desafió las nociones de desarrollo lineal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Pablo Picasso -->
+    <!-- Comienzo René Magritte -->
+    <div class="container-colecciones p-3">
+        <div class="row p-4 pe-lg-0 align-items-center rounded-3 shadow-lg">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="artista">René Magritte (Bélgica, 1898–1967)</h1>
+                <p class="artista-parrafo">“El arte del pintor, tal como yo lo veo, se trata de hacer visibles las
+                    imágenes
+                    poéticas”.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                    <button type="button" class="btn btn-outline-light p-3 rounded-5" data-bs-toggle="modal"
+                        data-bs-target="#rene">
+                        Ver obras
+                    </button>
+                </div>
+                <!-- Carrusel Rene -->
+                <div class="modal fade" id="rene" tabindex="-1" aria-labelledby="rene" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title" id="rene">René Magritte</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="card border-0">
+                                    <div id="carousel-rene" class="carousel slide carousel-fade">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#rene" data-bs-slide-to="0"
+                                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carousel-rene" data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carousel-rene" data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carousel-rene" data-bs-slide-to="3"
+                                                aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner rounded">
+                                            <div class="carousel-item active">
+                                                <img src="img/rene.png" class="d-block w-100 img-fluid" alt="Obra-Nro1">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>The Lovers, Paris 1928</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/rene1.png" class="d-block w-100 img-fluid"
+                                                    alt="Obra-Nro2">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>The Palace of Curtains, III, Paris 1928-29</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/rene2.png" class="d-block w-100 img-fluid"
+                                                    alt="Obra-Nro3">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>The Empire of Light, II, 1950/h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="img/rene3.png" class="d-block w-100 img-fluid"
+                                                    alt="Obra-Nro4">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>The False Mirror, Paris 1929</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carousel-rene" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carousel-rene" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                    <div class="card-body-galeria">
+                                        <p class="card-text p-4">Nubes, pipas, bombines y manzanas verdes: estos siguen
+                                            siendo algunos de los
+                                            iconos más inmediatamente reconocibles de René Magritte, el pintor belga y
+                                            conocido surrealista. Produjo un cuerpo de trabajo que convirtió cosas tan
+                                            comunes
+                                            en extrañas, colocándolas en escenas desconocidas o extrañas, o
+                                            etiquetándolas
+                                            deliberadamente de manera incorrecta para "hacer que los objetos más
+                                            cotidianos
+                                            gritarán en voz alta". Con sus acertijos pictóricos y lingüísticos, Magritte
+                                            convirtió lo
+                                            familiar en perturbador y extraño, planteando preguntas sobre la naturaleza
+                                            de la
+                                            representación y la realidad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-0 overflow-hidden shadow-lg">
+                <img class="rounded-lg-3 img-fluid" src="img/rene.png" alt="" width="720">
+            </div>
+        </div>
+    </div>
+    <!-- Fin René Magritte -->
+    <!-- Comienzo Salvador Dalí -->
+    <div class="container-colecciones p-3">
+        <div class="row p-4 pe-lg-0 align-items-center rounded-3 shadow-lg">
+            <div class="col-lg-4 p-0 overflow-hidden shadow-lg">
+                <img class="rounded-lg-3 img-fluid" src="img/dali.png" alt="" width="720">
+            </div>
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="artista">Salvador Dalí (España, 1904–1989)</h1>
+                <p class="artista-parrafo">“Declaro la independencia de la imaginación y el derecho del hombre a su
+                    propia locura.”</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                    <button type="button" class="btn btn-outline-light p-3 rounded-5" data-bs-toggle="modal"
+                        data-bs-target="#dali">
+                        Ver obras
+                    </button>
+                    <!-- Carrusel Dali -->
+                    <div class="modal fade" id="dali" tabindex="-1" aria-labelledby="rene" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="dali">Salvador Dalí</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="card border-0">
+                                        <div id="carousel-dali" class="carousel slide carousel-fade">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#dali" data-bs-slide-to="0"
+                                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carousel-dali"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carousel-dali"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                <button type="button" data-bs-target="#carousel-dali"
+                                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            </div>
+                                            <div class="carousel-inner rounded">
+                                                <div class="carousel-item active">
+                                                    <img src="img/dali.png" class="d-block w-100 img-fluid"
+                                                        alt="Obra-Nro1">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>Illumined Pleasures, 1929</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/dali1.png" class="d-block w-100 img-fluid"
+                                                        alt="Obra-Nro2">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>The Persistence of Memory, 1931</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/dali2.png" class="d-block w-100 img-fluid"
+                                                        alt="Obra-Nro3">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>Debris of an Automobile Giving Birth to a Blind Horse Biting
+                                                            a Telephone,
+                                                            1938</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/dali3.png" class="d-block w-100 img-fluid"
+                                                        alt="Obra-Nro4">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>The Little Theater, 1934</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carousel-dali" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carousel-dali" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <div class="card-body-galeria">
+                                            <p class="card-text p-4">La principal contribución teórica de Dalí al
+                                                surrealismo fue su elaboración, a principios de la
+                                                década de 1930, del “método paranoico-crítico”, un proceso, escribió,
+                                                para “sistematizar la
+                                                confusión y contribuir así a un descrédito total del mundo de la
+                                                realidad”. El método
+                                                describía un estado mental deliberadamente desorientado que permitiría a
+                                                un individuo
+                                                conectar cosas no relacionadas, forjando nuevas vías de pensamiento y
+                                                creación. Casi al
+                                                mismo tiempo, también publicó varios ensayos en los que nombraba y
+                                                definía el llamado
+                                                "objeto surrealista": un objeto que "funciona simbólicamente",
+                                                generalmente construido a
+                                                partir de elementos encontrados o materiales confeccionados, y con un
+                                                olor a poder
+                                                psicológico. Su Busto de mujer retrospectivo fue uno de esos objetos.
+                                                Debajo de su busto
+                                                de mujer adornado aparentemente al azar, palpitaba una rica red de
+                                                asociaciones, desde
+                                                referencias al consumo (mazorcas de maíz y una baguette) hasta la
+                                                putrefacción (un
+                                                enjambre de hormigas, un motivo recurrente en la obra de Dalí).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Salvador Dalí -->
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12  col-sm-6 py-4 text-center">
+                    <img class="img-fluid" src="img/logo.png" width="110" alt="Logo-MoMA">
+                </div>
+                <div class="col-lg-12 col-sm-6 py-4 text-center">
+                    <a class="red-social" href="http:///www.facebook.com/MuseumofModernArt/" target="_blank">
+                        <img src="img/fb.png" width="48" alt="red-social1">
+                    </a>
+                    <a class="red-social" href="https://www.instagram.com/themuseumofmodernart/" target="_blank">
+                        <img src="img/ig.png" width="48" alt="red-social2">
+                    </a>
+                    <a class="red-social" href="https://twitter.com/museummodernart" target="_blank">
+                        <img src="img/tw.png" width="48" alt="red-social3">
+                    </a>
+                    <a class="red-social" href="https://www.youtube.com/user/momavideos" target="_blank">
+                        <img src="img/yt.png" width="48" alt="red-social4">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center text-light ">
+                    <p>
+                        © MoMA Museum of Modern Art
+                    </p>
+                    <p>
+                        Buffet Aylen Aldana - Bruno Maria Cecilia / DGM4AH 2023
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

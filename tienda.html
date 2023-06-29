@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoMA Design Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo-negro-01.png">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg p-3" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="120" alt="Logo MoMA"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html"><img src="img/lupa.png" width="30"
+                                    alt="Lupa-busqueda"></a>
+                        </li>
+                        <li class="nav-item d-block d-sm-block d-md-none">
+                            <!-- Boton entradas -->
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"">
+                            <button type=" button" class="btn btn-outline-light rounded-5 p-3 m-2"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Entradas
+                                </button>
+                            </div>
+
+                            <!-- Formulario entrada -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-black">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Reserve sus entradas
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-dark">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Correo
+                                                    electrónico</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="nombre@ejemplo.com">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Día y
+                                                    horario a reservar</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                    rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer bg-black">
+                                            <button type="button" class="btn btn-outline-light rounded-5 p-3 m-2"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="button"
+                                                class="btn btn-outline-light rounded-5 p-3 m-2">Consultar
+                                                reserva</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- carrusel store -->
+    <section>
+        <div id="carousel-galeria" class="carousel slide carousel-fade d-flex">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-galeria" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-galeria" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-galeria" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/store.png" class="d-block w-100" alt="store-pic">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-1 fw-bold">Tienda oficial MoMA</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/store1.png" class="d-block w-100" alt="Store-pic">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="fw-bold display-1">Tienda oficial MoMA</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/tienda_carrusel.jpg" class="d-block w-100" alt="Store-pic">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="fw-bold display-1">Tienda oficial MoMA</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-galeria" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-galeria" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- fin carrusel store -->
+    </section>
+
+    <!-- comienzo tienda -->
+    <section class="tienda">
+        <div class="container">
+            <div class="row g-4">
+                <!-- primer articulo -->
+                <div class="col-lg-4 col-md-6 col-sm-6 p-4">
+                    <div class="card text-center border-0">
+                        <div id="andy" class="carousel slide carousel-fade">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                    <img src="img/andy.png" class="d-block w-100" alt="Articulo-1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/andy1.png" class="d-block w-100" alt="Articulo-1">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#andy"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#andy"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body-store p-3 rounded">
+                            <h3 class="card-title text-light p-2 fs-4">Andy Warhol Mick Jagger Framed Poster</h3>
+                            <p class="card-text text-light fw-bold fs-2">$509.700</p>
+                            <a href="tienda.html" class="btn btn-outline-light rounded-5 btn-lg">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2do articulo -->
+                <div class="col-lg-4 col-md-6 col-sm-6 p-4">
+                    <div class="card text-center border-0">
+                        <div id="faber" class="carousel slide carousel-fade">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                    <img src="img/fabercastell.png" class="d-block w-100" alt="Articulo-2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/fabercastell1.png" class="d-block w-100" alt="Articulo-2">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#faber"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#faber"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body-store p-3 rounded-bottom">
+                            <h5 class="card-title text-light p-2 fs-4">Faber Castell Paint-by-Number Artwork Kit</h5>
+                            <p class="card-text text-light fw-bold fs-2">
+                                $1.500</p>
+                            <a href="tienda.html" class="btn btn-outline-light rounded-5 btn-lg">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3er articulo -->
+                <div class="col-lg-4 col-md-6 col-sm-6 p-4">
+                    <div class="card text-center border-0">
+                        <div id="cat" class="carousel slide carousel-fade">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                    <img src="img/kitkat1.png" class="d-block w-100 img-fluid" alt="Articulo-3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/kitkat.png" class="d-block w-100 img-fluid" alt="Articulo-3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cat"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#cat"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body-store p-3 rounded-bottom">
+                            <h5 class="card-title text-light p-2 fs-4">Kit-Cat Clock FREE "AA" BATTERY INCLUDED</h5>
+                            <p class="card-text text-light fw-bold fs-2">$3.500</p>
+                            <a href="tienda.html" class="btn btn-outline-light rounded-5 btn-lg">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4to articulo -->
+                <div class="col-lg-4 col-md-6 col-sm-6 p-4">
+                    <div class="card text-center border-0">
+                        <div id="lomo" class="carousel slide carousel-fade">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                    <img src="img/lomo.png" class="d-block w-100" alt="Articulo-4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/lomo1.png" class="d-block w-100" alt="Articulo-4">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#lomo"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#lomo"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body-store p-3 rounded-bottom">
+                            <h5 class="card-title text-light p-2 fs-4">Lomo'Instant - William Klein Edition</h5>
+                            <p class="card-text text-light fw-bold fs-2">$9.500</p>
+                            <a href="tienda.html" class="btn btn-outline-light rounded-5 btn-lg">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5to articulo -->
+                <div class="col-lg-4 col-md-6 col-sm-6 p-4">
+                    <div class="card text-center border-0">
+                        <div id="flower" class="carousel slide carousel-fade">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                    <img src="img/flower.png" class="d-block w-100" alt="Articulo-5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/flower1.png" class="d-block w-100" alt="Articulo-5">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#flower"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#flower"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body-store p-3 rounded-bottom">
+                            <h5 class="card-title text-light p-2 fs-4">Pieces of Time Flower Objet d'Art</h5>
+                            <p class="card-text text-light fw-bold fs-2">$15.000</p>
+                            <a href="tienda.html" class="btn btn-outline-light rounded-5 btn-lg">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6to articulo -->
+                <div class="col-lg-4 col-md-6 col-sm-6 p-4">
+                    <div class="card text-center border-0">
+                        <div id="piluso" class="carousel slide carousel-fade">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                    <img src="img/hat.png" class="d-block w-100" alt="Articulo-6">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/hat1.png" class="d-block w-100" alt="Articulo-6">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#piluso"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#piluso"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body-store p-3 rounded-bottom">
+                            <h5 class="card-title text-light p-2 fs-4">Sombrero de pescador Kangol - MoMA</h5>
+                            <p class="card-text text-light fw-bold fs-2">$19.530</p>
+                            <a href="tienda.html" class="btn btn-outline-light rounded-5 btn-lg">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7mo articulo -->
+                <div class="col-lg-4 col-md-6 col-sm-6 p-4">
+                    <div class="card text-center border-0">
+                        <div id="lego" class="carousel slide carousel-fade">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                    <img src="img/lego.png" class="d-block w-100" alt="Articulo-7">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/lego1.png" class="d-block w-100" alt="Articulo-7">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#lego"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#lego"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body-store p-3 rounded-bottom">
+                            <h5 class="card-title text-light p-2 fs-4">LEGO® Ideas The Starry Night </h5>
+                            <p class="card-text text-light fw-bold fs-2">$43.400</p>
+                            <a href="tienda.html" class="btn btn-outline-light rounded-5 btn-lg">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8vo articulo -->
+                <div class="col-lg-4 col-md-6 col-sm-6 p-4">
+                    <div class="card text-center border-0">
+                        <div id="swatch" class="carousel slide carousel-fade">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                    <img src="img/watch.png" class="d-block w-100" alt="Articulo-8">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/watch1.png" class="d-block w-100" alt="Articulo-8">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#swatch"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#swatch"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body-store p-3 rounded-bottom">
+                            <h5 class="card-title text-light p-2 fs-4">Swatch x Magritte Watches</h5>
+                            <p class="card-text text-light fw-bold fs-2">$26.800</p>
+                            <a href="tienda.html" class="btn btn-outline-light rounded-5 btn-lg">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 9no articulo -->
+                <div class="col-lg-4 col-md-6 col-sm-6 p-4">
+                    <div class="card text-center border-0">
+                        <div id="nina" class="carousel slide carousel-fade">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active">
+                                    <img src="img/yoshitomo.png" class="d-block w-100" alt="Articulo-9">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/yoshitomo1.png" class="d-block w-100" alt="Articulo-9">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#nina"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#nina"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body-store p-3 rounded-bottom">
+                            <h5 class="card-title text-light p-2 fs-4">Yoshitomo Nara Miss Margaret</h5>
+                            <p class="card-text text-light fw-bold fs-2">$6.000</p>
+                            <a href="tienda.html" class="btn btn-outline-light rounded-5 btn-lg">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12  col-sm-6 py-4 text-center">
+                    <img class="img-fluid" src="img/logo.png" width="110" alt="Logo-MoMA">
+                </div>
+                <div class="col-lg-12 col-sm-6 py-4 text-center">
+                    <a class="red-social" href="http:///www.facebook.com/MuseumofModernArt/" target="_blank">
+                        <img src="img/fb.png" width="48" alt="red-social1">
+                    </a>
+                    <a class="red-social" href="https://www.instagram.com/themuseumofmodernart/" target="_blank">
+                        <img src="img/ig.png" width="48" alt="red-social2">
+                    </a>
+                    <a class="red-social" href="https://twitter.com/museummodernart" target="_blank">
+                        <img src="img/tw.png" width="48" alt="red-social3">
+                    </a>
+                    <a class="red-social" href="https://www.youtube.com/user/momavideos" target="_blank">
+                        <img src="img/yt.png" width="48" alt="red-social4">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center text-light py-4">
+                    <p>
+                        © MoMA Museum of Modern Art
+                    </p>
+                    <p>
+                        Buffet Aylen Aldana - Bruno Maria Cecilia / DGM4AH 2023
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
